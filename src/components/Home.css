@@ -1,0 +1,134 @@
+.home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to right, #9926f0f2, #d122e3f2);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+  width: 80%;
+  max-width: 800px; 
+}
+
+.home .hero-content h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 5.5rem;
+  font-weight: 900;
+  animation: fadeIn 1s ease-out; 
+}
+
+.home .hero-content p {
+  margin: 20px 50px;
+  text-align: justify;
+  color: #fff; 
+  font-size: 2.2rem;
+  font-weight: 500;
+  animation: slideUp 1s ease-out;
+  
+}
+
+.hire-me-button {
+  padding: 20px 50px;
+  font-size: 16px;
+  margin-top: 20px; /* Adjust the margin to separate the button from the text */
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fff;
+  animation: scaleIn 1s ease-out;
+  transition: color 0.5s;
+  transition-timing-function: ease;
+  transition: border 0.5s;
+}
+
+.hire-me-button::before {
+  border: 1px solid transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 101%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+  border-radius: 0;
+}
+
+.hire-me-button:hover {
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.hire-me-button:hover::before {
+  transform: scaleX(1);
+  border: 1px solid transparent;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .hero-content {
+    width: 90%;
+  }
+  
+  .hire-me-button {
+    margin-right: 0; /* Adjust the margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: 95%;
+  }
+
+  .hire-me-button {
+    margin-right: 0; /* Adjust the margin for even smaller screens */
+  }
+}
+
+/* Text Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

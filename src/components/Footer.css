@@ -1,0 +1,95 @@
+/* Footer.css */
+.footer {
+  background-color: #001e00;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-section p {
+  margin: 8px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+/* Additional styling for Quick Links and Follow Us */
+.footer-section:last-child h2,
+.footer-section:nth-last-child(2) h2 {
+  border-bottom: none;
+}
+
+.footer-section:last-child p,
+.footer-section:nth-last-child(2) p {
+  font-weight: bold;
+}
+
+/* Style links in the Quick Links and Follow Us section */
+.footer-section:last-child p a,
+.footer-section:nth-last-child(2) p a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section:last-child p a:hover,
+.footer-section:nth-last-child(2) p a:hover {
+  color: #aaffaa; /* Change the hover color to a lighter shade */
+}
+
+.footer-section a,
+.footer-section i {
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+}
+
+/* Footer.css */
+
+.footer-section.quick-links {
+  color: white;
+}
+
+.footer-section.quick-links a {
+  color: white;
+}
+
+.footer-section.quick-links i {
+  color: white;
+}
+
+.footer-section.follow-us {
+  color: white;
+}
+
+.footer-section.follow-us a {
+  color: white;
+}
+
+.footer-section.follow-us i {
+  color: white;
+}
